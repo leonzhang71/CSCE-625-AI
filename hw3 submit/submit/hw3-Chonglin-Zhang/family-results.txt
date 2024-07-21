@@ -1,0 +1,105 @@
+1. Who are the grandchildren of Charles?
+
+| ?- grandparent(charles, X).
+
+X = princegeorge ? ;
+
+X = princesscharlotte ? ;
+
+X = princelouis ? ;
+
+X = archieharrison
+
+yes
+
+
+2. Who is married to Prince Willam’s brother?
+
+| ?- brother(X, princewilliam), spouse(X, Y).
+
+X = princeharry
+Y = meghan ? 
+
+yes
+
+
+3. Who is the uncle of Princess Charlotte?
+
+| ?- uncle(X, princesscharlotte).
+
+X = princeharry ? 
+
+yes
+
+
+4. Who is the aunt of Archie Harrison?
+
+| ?- aunt(X, archieharrison).
+
+X = catherine ? 
+
+yes
+
+
+5. Who are the nephews of Prince Harry?
+
+| ?- nephew(X, princeharry).
+
+X = princegeorge ? ;
+
+X = princelouis ? 
+
+yes
+
+
+6. Who is the stepmother of Prince William?
+
+| ?- stepmother(X, princewilliam).
+
+X = camilla ? 
+
+yes
+
+
+7. Who has siblings?
+
+| ?- sibling(X, _).
+
+X = princegeorge ? ;
+
+X = princegeorge ? ;
+
+X = princesscharlotte ? ;
+
+X = princesscharlotte ? ;
+
+X = princelouis ? ;
+
+X = princelouis ? ;
+
+X = princewilliam ? ;
+
+X = princeharry ? 
+
+yes
+
+
+8. Who has a female cousin?
+
+| ?- cousin(X, Y), female(X).
+
+X = princesscharlotte
+Y = archieharrison ? 
+
+yes
+
+
+9. Who has a niece?
+
+| ?- niece(X, Y).
+
+X = princesscharlotte
+Y = princeharry ? 
+
+yes
+
