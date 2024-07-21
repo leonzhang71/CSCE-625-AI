@@ -1,2 +1,2 @@
-# CSCE-625-AI
+# Artificial Intelligence
 AI
